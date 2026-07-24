@@ -23,10 +23,9 @@ void free_array (int rows, six_seven **arr) {
     free(arr);
 }
 
-void encode_float (int rows, int cols, six_seven **arr) {
+void encode_int (int rows, int cols, six_seven **arr) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            printf("Enter value for [%d][%d]: ", i, j);
             scanf("%d", &arr[i][j].input);
         }
     }
@@ -40,18 +39,7 @@ void imgCvtGrayInttoFloat (int rows, int cols, six_seven **arr) {
     }
 }
 
-void output_ints (int rows, int cols, six_seven **arr) {
-    printf("Ints of array:\n");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            printf("%d ", arr[i][j].input);
-        }
-        printf("\n");
-    }
-}
-
 void output_floats (int rows, int cols, six_seven **arr) {
-    printf("Floats of array:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             printf("%.2f ", arr[i][j].output);
@@ -62,20 +50,16 @@ void output_floats (int rows, int cols, six_seven **arr) {
 
 int main () {
     int rows, cols;
-
-    printf("Enter number of rows: ");
+ 
     scanf("%d", &rows);
-    printf("Enter number of columns: ");
     scanf("%d", &cols);
 
     six_seven **arr = create_array(rows, cols);
 
-    encode_float(rows, cols, arr);
+    encode_int(rows, cols, arr);
 
     imgCvtGrayInttoFloat(rows, cols, arr);
 
-    output_ints(rows, cols, arr);
-    printf("\n");
     output_floats(rows, cols, arr);
 
     free_array(rows, arr);
