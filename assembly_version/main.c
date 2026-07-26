@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern imgCvtGrayInttoFloat(unsigned int row, unsigned int col, unsigned int* data);
+extern unsigned long long imgCvtGrayInttoFloat(unsigned int row, unsigned int col, unsigned int* data);
 
 int main() {
 	unsigned const int ARR_SIZE = 1000000;
@@ -13,7 +13,7 @@ int main() {
 	scanf_s(" %d", &row);
 	printf("INPUT COL SIZE: ");
 	scanf_s(" %d", &col);
-	m_size = row * col;
+	m_size = (unsigned long long) row * col;
 
 	//allocate if needed
 	unsigned int* data = malloc(m_size * sizeof(int));

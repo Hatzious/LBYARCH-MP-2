@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-imgCvtGrayInttoFloat",
+      "appliesTo": "assembly_version/imgCvtGrayInttoFloat.asm",
+      "type": "launch"
+    }
+  ]
+}
