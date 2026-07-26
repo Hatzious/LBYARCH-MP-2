@@ -1,9 +1,6 @@
-﻿  main.c
-E:\School\LBYARCH\assembly_version\main.c(33,9): warning C4133: 'initializing': incompatible types - from 'unsigned int *' to 'float *'
+﻿  Previous IPDB and IOBJ mismatch, fall back to full compilation.
 assembly_version\x64\Release\imgCvtGrayInttoFloat.obj : warning LNK4042: object specified more than once; extras ignored
   Generating code
-  1 of 7 functions (14.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   assembly_version.vcxproj -> E:\School\LBYARCH\assembly_version\x64\Release\assembly_version.exe

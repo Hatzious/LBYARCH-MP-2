@@ -28,6 +28,10 @@ imgCvtGrayInttoFloat:
 	MOV R12, 0
 	MOV RSI, 0
 
+	;create the divisor
+	MOVSS XMM1, [DIVISOR]
+	RCPSS XMM1, XMM1
+
 LOOP1:
 	;clear R9 of garbage
 	;R9 will hold our temporary data
@@ -36,8 +40,7 @@ LOOP1:
 	CVTSI2SS XMM0, R9D;convert to float
 
 	;do da division
-	MOVSS XMM1, [DIVISOR]
-	DIVSS XMM0, XMM1
+	MULSS XMM0, XMM1
 
 	;move result into memory
 	MOVSS dword [R8 + 4 * RSI], XMM0
