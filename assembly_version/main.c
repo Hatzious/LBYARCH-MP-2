@@ -9,9 +9,7 @@ int main() {
 	unsigned long long m_size;
 	row = col = 0;
 
-	printf("INPUT ROW SIZE: ");
 	scanf_s(" %d", &row);
-	printf("INPUT COL SIZE: ");
 	scanf_s(" %d", &col);
 	m_size = (unsigned long long) row * col;
 
