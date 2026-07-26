@@ -1,0 +1,9 @@
+﻿  Performing Custom Build Tools
+  main.c
+E:\School\LBYARCH\assembly_version\main.c(35,9): warning C4133: 'initializing': incompatible types - from 'unsigned int *' to 'float *'
+assembly_version\x64\Release\imgCvtGrayInttoFloat.obj : warning LNK4042: object specified more than once; extras ignored
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  assembly_version.vcxproj -> E:\School\LBYARCH\assembly_version\x64\Release\assembly_version.exe

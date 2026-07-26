@@ -1,0 +1,2 @@
+^E:\SCHOOL\LBYARCH\ASSEMBLY_VERSION\IMGCVTGRAYINTTOFLOAT.ASM
+E:\NASM\nasm.exe -f win64 -o "assembly_version\x64\Release\imgCvtGrayInttoFloat.obj" "E:\School\LBYARCH\assembly_version\imgCvtGrayInttoFloat.asm"

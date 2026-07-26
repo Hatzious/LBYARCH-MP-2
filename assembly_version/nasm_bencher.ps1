@@ -5,7 +5,7 @@ Set-Location $PSScriptRoot
 
 for ($i = 1; $i -le $runs; $i++) {
     $elapsed = Measure-Command {
-        Get-Content .\input.txt | .\x64\Debug\assembly_version.exe | Out-Null
+        Get-Content .\input.txt | .\x64\Release\assembly_version.exe | Out-Null
     }
     $ms = $elapsed.TotalMilliseconds
     $times += $ms
